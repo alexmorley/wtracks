@@ -2,14 +2,6 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 
 if (workbox) {
 
-  /* *
-  console.log("Workbox loaded!");
-  workbox.setConfig({
-    debug: true
-  });
-  workbox.core.setLogLevel(workbox.core.LOG_LEVELS.debug);
-  /* */
-
   workbox.routing.registerRoute(
     new RegExp('/wtracks/.*'),
     // Use cache but update in the background.
